@@ -1,0 +1,64 @@
+
+html {
+    background: #091921;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock {
+    width: 30rem;
+    height: 30rem;
+    background-color: #091921;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    background-image: url("https://user-images.githubusercontent.com/5783354/152565076-708e01fd-f639-4713-ab43-d4f019c8ffa7.png");
+    background-size: cover;
+    border: 4px solid #091921;
+	box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+		0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+.clock-face {
+    position: relative;
+    background:rgba(18, 18, 43, 0.767);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+.hand {
+    width: 50%;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour-hand {
+    background: #ff105e;
+    width: 35%;
+	left: 15%;
+}
+.min-hand {
+    background: #fff;
+    width: 40%;
+	left: 10%;
+	height: 4px;
+}
+.second-hand {
+    background: rgba(145, 135, 1, 0.808);
+    width: 45%;
+	left: 5%;
+	height: 3px;
+}
