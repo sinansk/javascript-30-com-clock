@@ -25,3 +25,4 @@ function setDate() {
 }
 
 setInterval(setDate, 1000);
+window.addEventListener('load', setDate());
